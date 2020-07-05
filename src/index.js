@@ -6,17 +6,23 @@ function Lake({name}){
     return <h1>{name}</h1>
 }
 
-function App(){
+const lakeList = [
+    "Echo Lake",
+    "Maud Lake",
+    "Cascade Lake"
+];
+
+function App({lakes}){
     return(
-        <div>
-            <Lake name="Lake Tahoe"/>
-            <Lake name="Angora Lake"/>
-            <Lake name="Shirley Lake"/>
-        </div>
+        <ul>
+            {lakes.map(lake =>(
+                <li>{lake}</li>
+            ))}
+        </ul>
     );
 }
 
 ReactDOM.render(
-  <App/>,
+  <App lakes = {lakeList}/>,
   document.getElementById('root')
 );
