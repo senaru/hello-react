@@ -28,3 +28,12 @@ ReactDOM.render(
     <App season="summer" />,
     document.getElementById('root')
 );
+
+const [first, , best] = [
+    "popcorn",
+    "pretzels",
+    "doritos"
+]
+
+console.log(first)
+console.log(best)
