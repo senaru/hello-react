@@ -4,16 +4,16 @@ import './index.css';
 
 function Lake({ name }) {
     return (
-        <div>
+        <>
             <h1>Visit {name}</h1>
-        </div>);
+        </>);
 }
 
 function SkiResort({ name }) {
     return (
-        <div>
+        <>
             <h1>Visit {name}!</h1>
-        </div>);
+        </>);
 }
 
 function App(props) {
