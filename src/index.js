@@ -2,14 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-function Hello(props){
-    console.log(props);
+function Hello({library,message,num}){
     return(
         <div>
-            <h1>Welcome to {props.library}</h1>
+            <h1>Welcome to {library}</h1>
             <p>Let's build something cool.</p>
-            <p>{props.message}</p>
-            <p>{Object.keys(props).length} Props Total</p>
+            <p>{message}</p>
+            <p>{num} Props Total</p>
         </div>
     );
 }
